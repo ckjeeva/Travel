@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>All Districts - Karnataka Tourism</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Districts - Karnataka Tourism</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.section{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+.grid-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.box{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:#fff;
+    padding:25px;
+    border-radius:12px;
+    font-weight:600;
+    transition:0.3s;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+}
+
+.box a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+</style>
 </head>
+
 <body>
 
 <nav>
@@ -20,38 +65,40 @@
 
 <section class="section">
     <h2>All Districts of Karnataka</h2>
+
     <div class="grid-list">
-        <div class="box">1.Bagalkot</div>
-        <div class="box">2.Ballari</div>
-        <div class="box">3.Belagavi</div>
-        <div class="box">4.Bengaluru Rural</div>
-        <div class="box">5.Bengaluru Urban</div>
-        <div class="box">6.Bidar</div>
-        <div class="box">7.Chamarajanagar</div>
-        <div class="box">8.Chikkaballapur</div>
-        <div class="box">9.Chikkamagaluru</div>
-        <div class="box">10.Chitradurga</div>
-        <div class="box">11.Dakshina Kannada</div>
-        <div class="box">12.Davanagere</div>
-        <div class="box">13.Gadag</div>
-        <div class="box">14.Dharwad</div>
-        <div class="box">15.Hassan</div>
-        <div class="box">16.Haveri</div>
-        <div class="box">17.Kalaburagi</div>
-        <div class="box">18.Kodagu</div>
-        <div class="box">19.Kolar</div>
-        <div class="box">20.Koppal</div>
-        <div class="box">21.Mandya</div>
-        <div class="box">22.Mysuru</div>
-        <div class="box">23.Raichur</div>
-        <div class="box">24.Ramanagara</div>
-        <div class="box">25.Shivamogga</div>
-        <div class="box">26.Tumakuru</div>
-        <div class="box">27.Udupi</div>
-        <div class="box">28.Uttara Kannada</div>
-        <div class="box">29.Vijayanagara</div>
-        <div class="box">30.Vijayapura</div>
-        <div class="box">31.Yadgir</div>
+
+        <div class="box"><a href="bagalkot.html">1. Bagalkot</a></div>
+        <div class="box"><a href="ballari.html">2. Ballari</a></div>
+        <div class="box"><a href="belagavi.html">3. Belagavi</a></div>
+        <div class="box"><a href="bengaluru-rural.html">4. Bengaluru Rural</a></div>
+        <div class="box"><a href="bengaluru-urban.html">5. Bengaluru Urban</a></div>
+        <div class="box"><a href="bidar.html">6. Bidar</a></div>
+        <div class="box"><a href="chamarajanagar.html">7. Chamarajanagar</a></div>
+        <div class="box"><a href="chikkaballapur.html">8. Chikkaballapur</a></div>
+        <div class="box"><a href="chikkamagaluru.html">9. Chikkamagaluru</a></div>
+        <div class="box"><a href="chitradurga.html">10. Chitradurga</a></div>
+        <div class="box"><a href="dakshina-kannada.html">11. Dakshina Kannada</a></div>
+        <div class="box"><a href="davanagere.html">12. Davanagere</a></div>
+        <div class="box"><a href="gadag.html">13. Gadag</a></div>
+        <div class="box"><a href="dharwad.html">14. Dharwad</a></div>
+        <div class="box"><a href="hassan.html">15. Hassan</a></div>
+        <div class="box"><a href="haveri.html">16. Haveri</a></div>
+        <div class="box"><a href="kalaburagi.html">17. Kalaburagi</a></div>
+        <div class="box"><a href="kodagu.html">18. Kodagu</a></div>
+        <div class="box"><a href="kolar.html">19. Kolar</a></div>
+        <div class="box"><a href="koppal.html">20. Koppal</a></div>
+        <div class="box"><a href="mandya.html">21. Mandya</a></div>
+        <div class="box"><a href="mysuru.html">22. Mysuru</a></div>
+        <div class="box"><a href="raichur.html">23. Raichur</a></div>
+        <div class="box"><a href="ramanagara.html">24. Ramanagara</a></div>
+        <div class="box"><a href="shivamogga.html">25. Shivamogga</a></div>
+        <div class="box"><a href="tumakuru.html">26. Tumakuru</a></div>
+        <div class="box"><a href="udupi.html">27. Udupi</a></div>
+        <div class="box"><a href="uttara-kannada.html">28. Uttara Kannada</a></div>
+        <div class="box"><a href="vijayanagara.html">29. Vijayanagara</a></div>
+        <div class="box"><a href="vijayapura.html">30. Vijayapura</a></div>
+        <div class="box"><a href="yadgir.html">31. Yadgir</a></div>
 
     </div>
 </section>
@@ -61,5 +108,4 @@
 </footer>
 
 </body>
-
 </html>
