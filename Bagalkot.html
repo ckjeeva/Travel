@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagalkot Tourist Places</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:#fff;
+    padding:30px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+.section{
+    padding:60px 8%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* Modal */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    padding-top:60px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+}
+
+.modal-content{
+    display:block;
+    margin:auto;
+    max-width:80%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:40px;
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:24px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Top Tourist Places in Bagalkot</h1>
+</header>
+
+<section class="section">
+<div class="grid">
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Durga_Temple_Aihole.jpg">
+<div class="card-content">
+<h3>Aihole</h3>
+<p>Cradle of Indian temple architecture featuring over 120 ancient temples built by the Chalukyas.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Vishnu_image_inside_cave_number_3_in_Badami.jpg">
+<div class="card-content">
+<h3>Badami Cave Temples</h3>
+<p>Rock-cut cave temples carved into red sandstone cliffs overlooking Agastya Lake.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Pattadakal_Group_of_Monuments.jpg">
+<div class="card-content">
+<h3>Pattadakal</h3>
+<p>UNESCO World Heritage Site blending Dravidian and Nagara architectural styles.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Banashankari_Temple_Badami.jpg">
+<div class="card-content">
+<h3>Banashankari Temple</h3>
+<p>Historic temple dedicated to Goddess Banashankari near Badami.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Galaganatha_Temple_Pattadakal.jpg">
+<div class="card-content">
+<h3>Galaganatha Temple</h3>
+<p>Elegant Nagara-style temple within the Pattadakal complex.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Bhootanatha_Temple_Badami.jpg">
+<div class="card-content">
+<h3>Bhootanatha Temple</h3>
+<p>Scenic temple on the banks of Agastya Lake dedicated to Lord Shiva.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Kudala_Sangama.jpg">
+<div class="card-content">
+<h3>Kudala Sangama</h3>
+<p>Sacred confluence of Krishna and Malaprabha rivers.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Almatti_Dam.jpg">
+<div class="card-content">
+<h3>Almatti Dam</h3>
+<p>Major dam across the Krishna River offering scenic sunset views.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+<span class="close" onclick="closeModal()">&times;</span>
+<img class="modal-content" id="modalImg">
+</div>
+
+<script>
+
+function openModal(card){
+    var img = card.querySelector("img");
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+}
+
+function closeModal(){
+    document.getElementById("imageModal").style.display = "none";
+}
+
+window.onclick = function(event){
+    var modal = document.getElementById("imageModal");
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
