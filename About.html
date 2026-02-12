@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About - Karnataka Tourism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f2027;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover,
+.active{
+    color:#ffd700;
+}
+
+/* HERO */
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1589987607627-0e03c8a3c6d6?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero h1{
+    font-size:45px;
+    animation:fadeIn 1.5s ease;
+}
+
+/* CONTENT */
+.content{
+    padding:80px 40px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.content h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.content p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#ffd700;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Karnataka Tourism</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>About Karnataka Tourism</h1>
+</section>
+
+<section class="content">
+    <h2>Discover the Soul of Karnataka</h2>
+    <p>
+        Karnataka is one of India’s most diverse states, known for its rich heritage, 
+        breathtaking landscapes, and vibrant culture. From the architectural wonders of Hampi 
+        to the serene beaches of Gokarna and the misty hills of Coorg, Karnataka offers 
+        unforgettable experiences for every traveler.
+    </p>
+    <p>
+        Our mission is to promote tourism by showcasing the beauty, traditions, 
+        and history of Karnataka to the world. We aim to make travel easy, enjoyable, 
+        and memorable for all visitors.
+    </p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>🌍 Our Vision</h3>
+        <p>To make Karnataka a globally recognized travel destination known for culture and nature.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎯 Our Mission</h3>
+        <p>To promote sustainable tourism and provide travelers with unforgettable experiences.</p>
+    </div>
+
+    <div class="card">
+        <h3>💎 Our Values</h3>
+        <p>Authenticity, sustainability, hospitality, and excellence in tourism services.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Karnataka Tourism | Designed by Jeevan</p>
+</footer>
+
+</body>
+</html>

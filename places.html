@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Places - Karnataka Tourism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f2027;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover,
+.active{
+    color:#ffd700;
+}
+
+/* HERO */
+.hero{
+    height:50vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1589987607627-0e03c8a3c6d6?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero h1{
+    font-size:40px;
+    animation:fadeIn 1.2s ease;
+}
+
+/* PLACES SECTION */
+.places{
+    padding:80px 40px;
+}
+
+.places h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:30px;
+}
+
+/* GRID */
+.place-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.place-card{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.place-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.place-content{
+    padding:20px;
+}
+
+.place-content h3{
+    margin-bottom:10px;
+}
+
+.place-content p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.place-card:hover{
+    transform:translateY(-10px);
+    background:#ffd700;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Karnataka Tourism</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="places.html" class="active">Places</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Top Tourist Places in Karnataka</h1>
+</section>
+
+<section class="places">
+    <h2>Explore Popular Destinations</h2>
+
+    <div class="place-grid">
+
+        <div class="place-card">
+            <img src="C:\Users\ckjee\Desktop\Hampi.jpg" alt="Hampi">
+            <div class="place-content">
+                <h3>Hampi</h3>
+                <p>UNESCO World Heritage Site known for ancient temples and historical ruins.</p>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="C:\Users\ckjee\Desktop\mysuru palace.jpg"alt="Mysuru Palace">
+            <div class="place-content">
+                <h3>Mysuru Palace</h3>
+                <p>One of the most magnificent royal palaces in India with stunning architecture.</p>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="C:\Users\ckjee\Desktop\coorg.jpg" alt="Coorg">
+            <div class="place-content">
+                <h3>Coorg</h3>
+                <p>Beautiful hill station famous for coffee plantations and misty landscapes.</p>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="C:\Users\ckjee\Desktop\gokarana.webp" alt="Gokarna">
+            <div class="place-content">
+                <h3>Gokarna</h3>
+                <p>Serene beaches and spiritual atmosphere perfect for relaxation.</p>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="C:\Users\ckjee\Desktop\jog falls.jpg" alt="Jog Falls">
+            <div class="place-content">
+                <h3>Jog Falls</h3>
+                <p>One of the highest waterfalls in India offering breathtaking views.</p>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="C:\Users\ckjee\Desktop\badami.jpg" alt="Badami">
+            <div class="place-content">
+                <h3>Badami</h3>
+                <p>Historic cave temples carved into red sandstone cliffs.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Karnataka Tourism | Designed by Jeevan</p>
+</footer>
+
+</body>
+</html>

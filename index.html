@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Karnataka Tourism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f2027;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover,
+.active{
+    color:#ffd700;
+}
+
+.login-btn{
+    background:#ffd700;
+    color:black;
+    padding:6px 15px;
+    border-radius:20px;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1589987607627-0e03c8a3c6d6?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero-content{
+    animation:fadeIn 1.5s ease;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn{
+    padding:12px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.primary{
+    background:#ffd700;
+    color:black;
+}
+
+.secondary{
+    border:2px solid #ffd700;
+    color:#ffd700;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* ABOUT SECTION */
+.about{
+    padding:100px 40px;
+    text-align:center;
+    background:#203a43;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* FEATURES */
+.features{
+    padding:100px 40px;
+    text-align:center;
+    background:#0f2027;
+}
+
+.features h2{
+    margin-bottom:50px;
+    font-size:30px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature-box{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+    background:#ffd700;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">Karnataka Tourism</div>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover Karnataka</h1>
+        <p>Experience Heritage • Nature • Culture • Adventure</p>
+        <div class="hero-buttons">
+            <a href="districts.html" class="btn primary">Explore Now</a>
+            <a href="places.html" class="btn secondary">Top Destinations</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Karnataka</h2>
+    <p>
+        Karnataka is a land of rich history, breathtaking landscapes and vibrant culture. 
+        From the heritage city of Hampi to the beaches of Gokarna and the hills of 
+        Chikkamagaluru, Karnataka offers unforgettable travel experiences.
+    </p>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Why Visit Karnataka?</h2>
+
+    <div class="feature-grid">
+        <div class="feature-box">
+            <h3>🏞 Scenic Beauty</h3>
+            <p>Explore waterfalls, hills and forests of Western Ghats.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🏛 Rich Heritage</h3>
+            <p>Visit Mysuru Palace, Hampi and ancient temples.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🏖 Beaches</h3>
+            <p>Relax at Gokarna, Karwar and Udupi beaches.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Karnataka Tourism | Designed by Jeevan</p>
+</footer>
+
+</body>
+</html>

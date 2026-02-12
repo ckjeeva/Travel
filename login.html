@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login - Karnataka Tourism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+/* LOGIN BOX */
+.login-container{
+    background:rgba(255,255,255,0.1);
+    padding:40px;
+    width:350px;
+    border-radius:15px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    text-align:center;
+    animation:fadeIn 1.2s ease;
+}
+
+.login-container h2{
+    margin-bottom:25px;
+    color:#fff;
+}
+
+/* INPUTS */
+.input-group{
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.input-group label{
+    color:#fff;
+    font-size:14px;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#ffd700;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* LINKS */
+.extra{
+    margin-top:15px;
+    font-size:14px;
+}
+
+.extra a{
+    color:#ffd700;
+    text-decoration:none;
+}
+
+.extra a:hover{
+    text-decoration:underline;
+}
+
+/* BACK BUTTON */
+.back-home{
+    position:absolute;
+    top:20px;
+    left:20px;
+    text-decoration:none;
+    background:#ffd700;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:600;
+    color:black;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:400px){
+    .login-container{
+        width:90%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">← Home</a>
+
+<div class="login-container">
+    <h2>Welcome Back</h2>
+
+    <form>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="extra">
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - Karnataka Tourism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f2027;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover,
+.active{
+    color:#ffd700;
+}
+
+/* HERO */
+.hero{
+    height:45vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero h1{
+    font-size:40px;
+    animation:fadeIn 1.2s ease;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    padding:80px 40px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+/* FORM */
+.contact-form{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-form h2{
+    margin-bottom:20px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:100px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#ffd700;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* INFO */
+.contact-info{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-info h2{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+}
+
+/* MAP */
+.map{
+    margin-top:20px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .contact-section{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Karnataka Tourism</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Contact Us</h1>
+</section>
+
+<section class="contact-section">
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>📍 Bengaluru, Karnataka, India</p>
+        <p>📞 +91 9591638515</p>
+        <p>📧 info@karnatakatourism.com</p>
+
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps?q=Bengaluru&output=embed" 
+                width="100%" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Karnataka Tourism | Designed by Jeevan</p>
+</footer>
+
+</body>
+</html>
