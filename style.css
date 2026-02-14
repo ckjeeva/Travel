@@ -6,11 +6,18 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: white;
+
+    /* Background Image + Overlay */
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/KARNATAKA.jpeg");  /* Change path if needed */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* NAVBAR */
@@ -91,7 +98,7 @@ nav a:hover {
 
 .box:hover {
     transform: translateY(-8px) scale(1.05);
-    background: rgba(255, 215, 0, 0.8);
+    background: rgba(255, 215, 0, 0.9);
     color: black;
 }
 
