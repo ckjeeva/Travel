@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagalkot Tourist Places</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:#fff;
+    padding:30px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+.section{
+    padding:60px 8%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* Modal */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    padding-top:60px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+}
+
+.modal-content{
+    display:block;
+    margin:auto;
+    max-width:80%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:40px;
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:24px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Top Tourist Places in Bagalkot</h1>
+</header>
+
+<section class="section">
+<div class="grid">
+
+<div class="card" onclick="openModal(this)">
+<img src="Jamboti Falls.jpg">
+<div class="card-content">
+<h3>Jamboti Hills</h3>
+<p>Jamboti Hills lies in the Western Ghats region near Belagavi.
+            It is known for its cool climate and rich biodiversity.
+            The region is suitable for trekking and camping activities.
+            Dense forests and scenic views attract nature lovers.
+            It provides a peaceful escape from urban life.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Kamal Basadi.jpg">
+<div class="card-content">
+<h3>Kamal Basadi</h3>
+<p>Kamal Basadi is an ancient Jain temple located inside Belagavi Fort.
+            It is famous for its lotus-shaped architectural design.
+            The temple dates back to the 12th century.
+            Intricate carvings reflect remarkable craftsmanship.
+            It is an important spiritual and historical site.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Navilutheertha Dam.jpg">
+<div class="card-content">
+<h3>Naviluteertha Dam</h3>
+<p>Naviluteertha Dam is built across the Malaprabha River.
+            It offers scenic water views and peaceful surroundings.
+            The dam area is popular for picnics and relaxation.
+            Visitors enjoy the calm atmosphere and fresh air.
+            It is a perfect family-friendly destination.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Rakaskop Reservoir.jpg">
+<div class="card-content">
+<h3>Rakaskop Reservoir</h3>
+<p>Rakaskop Reservoir is a serene water body near Belagavi.
+            It supplies drinking water to the city.
+            The location is known for its sunset and photography spots.
+            Surrounded by hills and greenery, it looks picturesque.
+            It is ideal for peaceful evening visits.</p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Parasgad Fort.jpg">
+<div class="card-content">
+<h3>Parasgad Fort</h3>
+<p>Parasgad Fort is located near Savadatti town.
+            The fort sits on a hilltop offering wide scenic views.
+            It has historical significance connected to regional rulers.
+            The trekking route is moderate and enjoyable.
+            It is perfect for history lovers and adventurers. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Gokak_Falls.jpg">
+<div class="card-content">
+<h3>Gokak Falls</h3>
+<p>Gokak Falls is one of the most spectacular waterfalls in Karnataka.
+            The Ghataprabha River drops from a height of 52 meters creating a roaring cascade.
+            It is often called the "Niagara of Karnataka" due to its wide horseshoe shape.
+            The hanging bridge offers a breathtaking panoramic view.
+            Best visited during monsoon season for full water flow. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Yellur Fort.jpg">
+<div class="card-content">
+<h3>Yellur Fort</h3>
+<p>Yellur Fort is a beautiful hill fort located near Belagavi city. 
+            It is a popular trekking destination among adventure enthusiasts. 
+            The fort offers stunning sunrise and sunset views. 
+            The peaceful surroundings make it ideal for weekend trips. 
+            It combines history and natural beauty. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Godachinmalki Falls.jpg">
+<div class="card-content">
+<h3>Godachinmalki Falls</h3>
+<p>Godachinmalki Falls is a hidden natural gem surrounded by lush greenery. 
+            It is perfect for nature lovers and photography enthusiasts. 
+            The waterfall becomes more powerful during monsoon season. 
+            Visitors can enjoy a calm and less crowded environment. 
+            It is ideal for a refreshing day trip. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Military Mahadeva Temple.jpg">
+<div class="card-content">
+<h3>Military Mahadeva Temple</h3>
+<p>Military Mahadeva Temple is a famous Shiva temple in Belagavi.
+            It attracts thousands of devotees every year.
+            The temple architecture is simple yet spiritually powerful.
+            It is especially crowded during Mahashivaratri festival.
+            A peaceful place for prayer and meditation. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Hidkal Dam.jpg">
+<div class="card-content">
+<h3>Hidkal Dam</h3>
+<p>Hidkal Dam is one of the largest reservoirs in Karnataka.
+            It is built across the Ghataprabha River.
+            The scenic drive to the dam offers beautiful countryside views.
+            Visitors enjoy boating and picnic activities nearby.
+            It is a great place for nature and water lovers. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Belagavi Fort.jpg">
+<div class="card-content">
+<h3>Belagavi Fort</h3>
+<p>Built in the 13th century, Belagavi Fort is a historic landmark of the city.
+            It reflects Indo-Islamic architecture and strong medieval defense design.
+            The famous Kamal Basadi Jain temple is located inside the fort complex.
+            The fort walls and gateways showcase impressive craftsmanship.
+            It is a must-visit destination for history enthusiasts. </p>
+</div>
+</div>
+
+<div class="card" onclick="openModal(this)">
+<img src="Kittur Fort.jpg">
+<div class="card-content">
+<h3>Kittur Fort</h3>
+<p>Kittur Fort is associated with Rani Chennamma, a brave freedom fighter.
+            It played an important role in resisting British rule.
+            The fort houses historical weapons and artifacts in its museum.
+            The architecture reflects Karnataka’s royal heritage.
+            It stands as a symbol of courage and pride. </p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+<span class="close" onclick="closeModal()">&times;</span>
+<img class="modal-content" id="modalImg">
+</div>
+
+<script>
+
+function openModal(card){
+    var img = card.querySelector("img");
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+}
+
+function closeModal(){
+    document.getElementById("imageModal").style.display = "none";
+}
+
+window.onclick = function(event){
+    var modal = document.getElementById("imageModal");
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
